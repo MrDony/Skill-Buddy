@@ -1,0 +1,17 @@
+<app-top-bar-client></app-top-bar-client>
+<div class="card h-87per">
+    <div class="title">
+        Search Jobs
+    </div>
+    <div class="description">Search and apply for recently uploaded jobs</div>
+    <div class="list h-87per">
+        <div class="list-item" *ngFor="let job of jobs">
+            <div class="row">Title: &nbsp;{{job.Title}}</div>
+            <div class="row">Description: &nbsp;{{job.Description}}</div>
+            <div class="row">Posted By: &nbsp;{{job.Username}}</div>
+            <div class="row">Posted Date: &nbsp;{{job.PostedDate.replace('T',' ')}}</div>
+            <div class="row">Budget: &nbsp;{{job.MinimumBudget}} to {{job.MaximumBudget}}</div>
+            <div class="row"><button class="button-medium m-12" (click)="applyForJob(job.JobID)">Apply</button></div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,17 @@
+<app-top-bar-customer></app-top-bar-customer>
+<div class="card h-87per">
+    <div class="title">
+        Pending Jobs
+    </div>
+    <div class="description">Pending jobs are the jobs that are not being worked on right now. They are in th market and are being looked at by skilled labour that might be interested in picking up thes jobs</div>
+    <div class="list h-87per">
+        <div class="list-item" *ngFor="let job of jobs">
+            <div class="row">Title: &nbsp;{{job.Title}}</div>
+            <div class="row">Description: &nbsp;{{job.Description}}</div>
+            <div class="row">Posted Date: &nbsp;{{job.PostedDate.replace('T',' ')}}</div>
+            <div class="row">Budget: &nbsp;{{job.MinimumBudget}} to {{job.MaximumBudget}}</div>
+            <div class="row"><button class="button-medium">View Applicants</button></div>
+        </div>
+        <div class="list-item" *ngIf="jobs.length==0">No pending Jobs</div>
+    </div>
+</div>

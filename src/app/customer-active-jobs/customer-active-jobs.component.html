@@ -1,0 +1,17 @@
+<app-top-bar-customer></app-top-bar-customer>
+<div class="card h-87per">
+    <div class="title">
+        Active Jobs
+    </div>
+    <div class="description">Active Jobs are jobs that are currently being worked on</div>
+    <div class="list h-87per">
+        <div class="list-item" *ngFor="let job of jobs">
+            <div class="row">Title: &nbsp;{{job.Title}}</div>
+            <div class="row">Description: &nbsp;{{job.Description}}</div>
+            <div class="row">Posted Date: &nbsp;{{job.PostedDate.replace('T',' ')}}</div>
+            <div class="row">Budget: &nbsp;{{job.MinimumBudget}} to {{job.MaximumBudget}}</div>
+            
+        </div>
+        <div class="list-item" *ngIf="jobs.length==0">No active Jobs</div>
+    </div>
+</div>

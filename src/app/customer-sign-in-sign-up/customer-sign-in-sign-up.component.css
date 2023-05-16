@@ -1,0 +1,35 @@
+.body{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    background-color: var(--tertiary-color);
+    display: flex;
+}
+
+.form-body{
+    background-color: var(--secondary-color);
+    padding: 30px;
+    width: 30%;
+    height: max-content;
+    align-self: center;
+    border-radius: var(--border-radius);
+    text-align-last: center;
+}
+
+.title{
+    color: var(--white);
+    margin: 12px;
+}
+.description{
+    color: var(--white);
+    margin: 12px;
+}
+
+.custom-input{
+    margin: 12px;
+    width: 80%;   
+}
+.button-medium{
+    margin: 12px;
+}
+

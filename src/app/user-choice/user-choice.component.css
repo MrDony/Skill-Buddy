@@ -1,0 +1,53 @@
+.choice-body{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.choice{
+    color: var(--white);
+    height: 100%;
+    text-align: -webkit-center;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+    font-size: 50px;
+    font-weight: 100;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s;
+    cursor: pointer;
+}
+
+.choice-1{
+    background-color: var(--tertiary-color);
+}
+
+.choice-2{
+    background-color: var(--secondary-color);
+}
+
+.desc-1{
+    width: 0%;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.desc-2{
+    width: 0%;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.choice-1:hover .desc-1{
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s;
+    width: 50%;
+    white-space:normal;
+}
+
+.choice-2:hover .desc-2{
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s;
+    width: 50%;
+    white-space:normal;
+}

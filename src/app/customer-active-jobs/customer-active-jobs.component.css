@@ -1,0 +1,14 @@
+.h-87per{
+    height: 87%;
+}
+.list{
+    background-color: var(--black);
+    overflow: scroll;
+    padding: 5px;
+}
+.list-item{
+    background-color: var(--secondary-color);
+    padding: 12px;
+    margin: 10px;
+    color: white;
+}

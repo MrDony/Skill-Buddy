@@ -1,0 +1,27 @@
+<app-top-bar-customer></app-top-bar-customer>
+<div class="column card" style="width: 80%;" *ngIf="!loading">
+    <div class="title">
+        Your Personal Details 
+    </div>
+    <a (click)="edit=true" *ngIf="!edit">edit</a>
+    <div class="row">
+        Username: &nbsp; {{User.Username}}
+    </div>
+    <div class="row">
+        Password: <input class="custom-input" placeholder="{{User.Password}}" [disabled]="!edit">
+    </div>
+    <div class="row">
+        Name: <input class="custom-input" placeholder="{{User.Name}}" [disabled]="!edit">
+    </div>
+    <div class="row">
+        Email: <input class="custom-input" placeholder="{{User.Email}}" [disabled]="!edit">
+    </div>
+    <div class="row">
+        Phone: <input class="custom-input" placeholder="{{User.Phone}}" [disabled]="!edit">
+    </div>
+    <div class="row">
+        Address: <input class="custom-input" placeholder="{{User.Address}}" [disabled]="!edit">
+    </div>
+    <button class="button-big" *ngIf="edit" (click)="edit=false">Done</button>
+</div>
+

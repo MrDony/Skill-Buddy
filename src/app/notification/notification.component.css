@@ -1,0 +1,35 @@
+.notification-title{
+    color: black;
+    font-size: 30px;
+    padding: 5px;
+}
+
+.notification-body{
+    color: black;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.card{
+    min-width: 300px;
+    max-width: max-content;
+}
+
+.notification-card{
+    width: max-content;
+    position: absolute;
+    top:10px;
+    left:10px;
+    background-color: var(--primary-color);
+    padding: 12px;
+    animation: appear-in linear 0.5s;
+}
+.button-medium{
+    color: var(--black);
+    background-color: inherit;
+}
+
+@keyframes appear-in {
+    from {opacity: 0%;}
+    to {opacity: 100%;}
+}

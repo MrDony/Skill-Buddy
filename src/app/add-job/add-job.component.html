@@ -1,0 +1,50 @@
+<app-top-bar-customer></app-top-bar-customer>
+<div class="column card" style="width: 80%;">
+    <div class="title">
+        Add Job
+    </div>
+    <div class="row">
+        <input class="custom-input" placeholder="Title" #title>
+    </div>
+    <div class="row">
+        <input class="custom-input" placeholder="Description" #descr>
+    </div>
+    <div class="row">
+        <div class="description m-12">Skills Required</div>
+    </div>
+    <div class="row m-12">
+        <div class="tag clickable" *ngFor="let skill of suggestedSkills; let i = index" (click)="addSkill(i)">{{skill.name}}</div>
+    </div>
+
+    <div class="row">
+        <div class="description m-12">Chosen Skills</div>
+    </div>
+    <div class="row">
+        <div class="tag clickable" style="background-color: var(--success-color);" 
+            *ngFor="let skill of skills" (click)="removeSkill(skill)">
+                {{skill.name}}
+        </div>
+    </div>
+    <div class="row">
+        <div class="description m-12">Budget</div>
+    </div>
+    <div class="row">
+        <input class="custom-input" placeholder="Minimum Budget" #minb> 
+        <input class="custom-input" placeholder="Maximum Budget" #maxb> 
+    </div>
+    <div class="row">
+        <div class="description m-12">Estimated Completion Time</div>
+    </div>
+    <div class="row">
+        <input class="custom-input" placeholder="Days" #days>
+    </div>
+    <div class="row">
+        <input class="custom-input" placeholder="Months" #months>
+    </div>
+    <div class="row">
+        <input class="custom-input" placeholder="Years" #years>
+    </div>
+    <div class="row">
+        <button class="button-big m-12" (click)="addJob(title.value, descr.value, minb.value, maxb.value, days.value, months.value, years.value)">Add Job +</button>
+    </div>
+</div>

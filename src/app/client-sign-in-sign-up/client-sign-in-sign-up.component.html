@@ -1,0 +1,59 @@
+
+
+<div class="body">
+    <div class="form-body column" *ngIf="show==1">
+        
+        <div class="title">Sign In</div>
+        <div>
+            <input class="custom-input" placeholder="Username" #siUname>
+        </div>
+    
+        <div>
+            <input class="custom-input" placeholder="Password" type="password" #siPass>
+        </div>
+        
+        <div>
+            <button class="button-medium" (click)="signInWorker(siUname.value, siPass.value)">Sign In</button>
+        </div>
+        
+        <div class="description">
+            Don't have an account? <a (click)="show=2">Sign Up</a> now!
+        </div>
+    </div>
+
+    <div class="form-body column" *ngIf="show==2">
+        
+        <div class="title">Sign Up</div>
+        <div>
+            <input class="custom-input" placeholder="Username" #suUname>
+        </div>
+    
+        <div>
+            <input class="custom-input" placeholder="Password" type="password" #suPass>
+        </div>
+
+        <div>
+            <input class="custom-input" placeholder="Name" #suName>
+        </div>
+
+        <div>
+            <input class="custom-input" placeholder="Description" #suDesc>
+        </div>
+        
+        <div>
+            <input class="custom-input" placeholder="Phone" #suPhone>
+        </div>
+
+        <div>
+            <input class="custom-input" placeholder="Email" #suEmail>
+        </div>
+
+        <div>
+            <button class="button-medium" (click)="signUpWorker(suUname.value, suPass.value, suName.value, suDesc.value, suPhone.value, suEmail.value)">Sign Up</button>
+        </div>
+        
+        <div class="description">
+            Already have an account? <a (click)="show=1">Sign In</a> now!
+        </div>
+    </div>
+</div>

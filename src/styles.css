@@ -1,1 +1,175 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+    --primary-color: #FFFCF2;
+    --secondary-color: #031927;
+    --tertiary-color: #BA1200;
+
+    --success-color: #0b8c29;
+    --danger-color: #b40e1f;
+    --warning-color: #ffbf00;
+    --info-color: #138ea1;
+    --button-color: #752F6D;
+    --link-color:#0d00ff;
+    
+    --white: #ededed;
+    --black: #141414;
+
+    --transition-g: cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s;
+
+    --border-radius: 4px;
+}
+
+body, html{
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--primary-color);
+}
+button{
+    border: none;
+}
+
+.button-medium{
+    background-color: var(--button-color) ;
+    color: white;
+    font-size: 20px;
+    padding: 3px 10px 3px 10px;
+    border-radius: var(--border-radius);
+    transition: var(--transition-g);
+    cursor: pointer;
+    width: max-content;
+}
+.button-medium:hover{
+    box-shadow: 0px 0px 3px 1px var(--black);
+}
+
+.tag{
+    background-color: var(--tertiary-color);
+    color: var(--white);
+    height: max-content;
+    padding: 2px 5px 2px 5px;
+    align-self: center;
+    margin: 2px;
+    border-radius: var(--border-radius);
+}
+.clickable{
+    cursor: pointer;
+}
+.clickable:hover{
+    box-shadow: 0px 0px 3px 0px var(--black);
+}
+
+.button-big{
+    background-color: var(--button-color) ;
+    color: white;
+    font-size: 40px;
+    padding: 3px 10px 3px 10px;
+    border-radius: var(--border-radius);
+    transition: var(--transition-g);
+    cursor: pointer;
+    width: max-content;
+}
+.button-big:hover{
+    box-shadow: 0px 0px 3px 1px var(--black);
+}
+
+.title{
+    color: inherit;
+    font-size: 40px;
+}
+.description{
+    color: inherit;
+    font-size: 16px;
+}
+
+.form-body{
+    display: block;
+}
+.custom-input{
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: var(--border-radius);
+    transition: var(--transition-g);
+}
+.custom-input:focus{
+    outline: none;
+    border-radius: 12px;
+}
+.card{
+    border-radius: var(--border-radius);
+    background-color: var(--white);
+    box-shadow: 0px 0px 20px 1px var(--black);
+    margin: 12px;
+    padding: 12px;
+    animation: appear-in var(--transition-g);
+}
+@keyframes appear-in {
+    from{ opacity: 0%;}
+    to{opacity: 100%;}
+}
+.value-holder{
+    background-color: var(--secondary-color);
+    text-align-last: center;
+    width:  300px;
+    height: 200px;
+}
+.value-holder-title{
+    color: white;
+    font-size: 30px;
+    font-weight: 300;
+}
+.value-holder-value{
+    color: white;
+    font-size: 60px;
+    font-weight: 600;
+
+    padding: 40px;
+}
+
+a{
+    color: var(--link-color);
+    padding: 1px;
+    background-color: var(--white);
+    cursor: pointer;
+}
+
+
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.column{
+    display: block;
+}
+.w-50per{
+    width: 50%;
+}
+.w-80per{
+    width: 80%;
+}
+.w-100per{
+    width: 100%;
+}
+.h-50per{
+    height: 50%;
+}
+.h-100per{
+    height: 100%;
+}
+.m-5{
+    margin: 5px;
+}
+.m-12{
+    margin: 12px;
+}
+.c-w{
+    color: var(--white)
+}
+.just-c{
+    justify-content: center;
+}

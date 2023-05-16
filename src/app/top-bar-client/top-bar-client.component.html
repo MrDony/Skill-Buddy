@@ -1,0 +1,11 @@
+<div class="row top-bar">
+    <div class="top-bar-element">Skill Buddy</div>
+    <div class="row">
+        <div class="top-bar-element" (click)="router.navigate(['/client-home'])">Home</div>
+        <div class="top-bar-element" (click)="router.navigate(['/client-profile'])">My Profile</div>
+        <div class="top-bar-element" (click)="router.navigate(['/client-search-job'])" >Search Job</div>
+        <div class="top-bar-element">Active Jobs</div>
+        <div class="top-bar-element" (click)="router.navigate(['/client-applied-jobs'])">Applied Jobs</div>
+        <div class="top-bar-element" (click)="logout()">Logout</div>
+    </div>
+</div>

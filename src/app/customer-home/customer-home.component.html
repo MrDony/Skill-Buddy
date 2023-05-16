@@ -1,0 +1,47 @@
+<app-top-bar-customer></app-top-bar-customer>
+<div class="column card" style="width: 50%;">
+    <div class="title">
+        Your Details
+    </div>
+    <div class="row">
+        <div class="description">Username: &nbsp; {{userDetails.Username}}</div>
+    </div>
+    <div class="row">
+        <div class="description">Name: &nbsp; {{userDetails.Name}}</div>
+    </div>
+    <div class="row">
+        <div class="description">Address: &nbsp; {{userDetails.Address}}</div>
+    </div>
+</div>
+<div class="column card">
+    <div class="title">
+        Your Jobs
+    </div>
+    <div class="row" style="justify-content: space-evenly;">
+        <div class="card value-holder">
+            <div class="value-holder-title">Pending</div>
+            <div class="value-holder-value">{{pendingJobsCount}}</div>
+        </div>
+
+        <div class="card value-holder">
+            <div class="value-holder-title">Active</div>
+            <div class="value-holder-value">{{activeJobsCount}}</div>
+        </div>
+
+        <div class="card value-holder">
+            <div class="value-holder-title">Completed</div>
+            <div class="value-holder-value">{{completedJobsCount}}</div>
+        </div>
+    </div>
+</div>
+<div class="column card">
+    <div class="title">
+        Post a job and find the skilled labour you need ASAP!
+    </div>
+    <div class="description">
+        Skill buddy gives you the oppertunity to seek out workers who will bring you the best skills to get your job done. Post a job, let the workers apply and then choose who you want to give th job to!
+    </div>
+    <div class="row m-12" style="justify-content: space-around;">
+        <button class="button-big" >Add Job</button>
+    </div>
+</div>
